@@ -4,72 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>inicial.html</title>
     <style>
         body {
-            background-color: rgb(255, 255, 255);
             font-family: 'Courier New', Courier, monospace;
-            margin: 0px;
+            background-color: aliceblue;
+            margin: 0;
         }
 
         .header {
-            background-color: blueviolet;
-            padding: 30px 70px;
-            border-radius: 10px;
-            box-shadow: 0px 10px 12px;
             display: flex;
-            justify-content: space-between; 
-            align-items: center; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, black, deeppink);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .header h1 {
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
             margin: 0;
-            color: white;
         }
 
         .opcoes {
-            list-style: none;
-            margin: 0;
-            padding: 0;
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
         }
 
-        .opcoes li {
+        .opcoes a {
             color: white;
-            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .cardg {
+            max-width: 1200px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            margin-top: 0;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color:deeppink
+        }
+
+        .cardg p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .card2 {
+            max-width: 1200px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .card2 h2 {
+            margin-top: 0;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color:deeppink
+        }
+
+        .card2 p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .card3 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .minicard {
+            position: relative;
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 20px 20px 20px;
+            width: 300px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s ease;
+        }
+
+        .minicard:hover {
+            transform: translateY(-5px);
+        }
+
+        .minicard .preço {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            color: red;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .minicard h3 {
+            margin: 10px 0 5px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.8rem;
+            color:deeppink
+        }
+
+        .minicard p {
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            color: #333;
             font-weight: bold;
         }
 
-        .card, .card2 {
-            padding: 30px;
+        .minicard img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
-            box-shadow: 10px 20px 39px rgba(0,0,0,0.2);
-            margin: 20px 70px; 
-        }
-
-        .card h1 {
-            margin: 0;
+            display: block;
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Coleciona a dor</h1>
-        <ul class="opcoes">
-            <li>Brinquedos</li>
-            <li>Roupas</li>
-        </ul>
-    </div>
 
-    <div class="card">
-        <h1>Temos várias promoções de action figures</h1>
-    </div>
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://i.ibb.co/rKJYz5ZJ/0d17df32-e2e4-45f3-94b5-265222740eb9-1.png" alt="logo">
+            <h1>Coleciona a dor</h1>
+        </div>
 
-    <div class="card2">
-        <h2>Outro conteúdo aqui...</h2>
+        <nav class="opcoes">
+            <a href="blusa.html">Brinquedos</a>
+            <a href="moletom.html">Roupas</a>
+        </nav>
+    </header>
+
+
+    <div class="cardg">
+        <h2>Bem-vindo à Coleciona a dor</h2>
+        <p>Confira as últimas tendências!</p>
+
+        <div class="card2">
+            <h2>Várias ofertas imperdíveis!</h2>
+            <p>Aqui você encontrará várias variedades de itens poucos achados </p>
+            <div class="card3">
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Calça</h3>
+                    <p>200$</p>
+                    <img src="https://i.ibb.co/wN9dKMsh/e5a68d80dec5bfdde8903b7cfb0a691e.jpg">
+                </div>
+
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Blusa</h3>
+                    <p>200$</p>
+                    <img src="https://i.ibb.co/Xkps8Mmj/969a9b2982297ce12de8c212c638fa23.jpg">
+                </div>
+
+                <div class="minicard">
+                    <div class="preço">1000$</div>
+                    <h3>Boné</h3>
+                    <p>300$</p>
+                    <img src="https://i.ibb.co/GvWMhYNC/eca91a1568d9d443930eca7984f2c185.jpg">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
-</html>
 
+</html>
