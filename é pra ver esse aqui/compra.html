@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <title>Compra</title>
+    <style>
+        body {
+            font-family: "Staatliches", sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, black, deeppink);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .check {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+        }
+
+        .pedido {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+        }
+
+        .pedido h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .pedido ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pedido li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .pagamento-btn {
+            display: inline-block;
+            background-color: deeppink;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none; 
+        }
+
+        .pagamento-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://i.ibb.co/rKJYz5ZJ/0d17df32-e2e4-45f3-94b5-265222740eb9-1.png" alt="logo">
+            <h1>Coleciona a dor</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="brinquedo.html">Brinquedos</a>
+            <a href="roupa.html">Roupas</a>
+        </nav>
+    </header>
+
+    <div class="check">
+        <h1>Finalizar Pedido</h1>
+
+        <div class="pedido">
+            <h2>Resumo do Pedido</h2>
+            <ul>
+                <li><span>Roupa coleciona a dor</span> <span>R$ 120,00</span></li>
+                <li><span>Brinquedo coleciona a dor</span> <span>R$ 120,00</span></li>
+            </ul>
+            <p class="total">Total: R$ 1200</p>
+        </div>
+
+        <a href="final.html" class="pagamento-btn">Confirmar Pagamento</a>
+    </div>
+
+</body>
+</html>

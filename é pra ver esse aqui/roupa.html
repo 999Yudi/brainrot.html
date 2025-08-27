@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Roupas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, black, deeppink); 
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .cardg {
+            max-width: 1000px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            margin-top:0%;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color: rgb(167, 0, 92);
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carditem {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            color: #333;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s;
+            text-align: center; 
+            cursor: pointer; /* deixa a mãozinha ao passar o mouse */
+        }
+
+        .carditem:hover {
+            transform: scale(1.05);
+        }
+
+        .carditem img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;   
+            height: 200px;  
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://i.ibb.co/rKJYz5ZJ/0d17df32-e2e4-45f3-94b5-265222740eb9-1.png" alt="logo">
+            <h1>Coleciona a dor</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="brinquedo.html">Brinquedos</a>
+            <a href="roupa.html">Roupas</a>
+        </nav>
+    </header>
+
+    <div class="cardg">
+        <h2>Roupas</h2>
+        <div class="cards">
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Boné SHARK</h1>
+                <img src="https://i.ibb.co/GvWMhYNC/eca91a1568d9d443930eca7984f2c185.jpg" alt="Boné SHARK">
+                <p>100R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Blusa GORILLAZ 2002</h1>
+                <img src="https://i.ibb.co/Xkps8Mmj/969a9b2982297ce12de8c212c638fa23.jpg" alt="Blusa GORILLAZ 2002">
+                <p>200R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Calça Costura estranha</h1>
+                <img src="https://i.ibb.co/wN9dKMsh/e5a68d80dec5bfdde8903b7cfb0a691e.jpg" alt="Calça Costura estranha">
+                <p>400R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Blusa GORILLAZ</h1>
+                <img src="https://i.ibb.co/gpX3jpF/55cef42710c2144d7af2f77494eaf1f3.jpg" alt="Blusa GORILLAZ">
+                <p>100R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Tenis SCOOBY DOO</h1>
+                <img src="https://i.ibb.co/VWtSf5wk/someimage.jpg" alt="Tenis SCOOBY DOO">
+                <p>200R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Blusa PLAYMATE</h1>
+                <img src="https://i.ibb.co/4g8Yb8Zm/d787871f5e34bfb288cca12e06af28b8.jpg" alt="Blusa PLAYMATE">
+                <p>300R$</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

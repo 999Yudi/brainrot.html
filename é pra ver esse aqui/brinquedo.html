@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Brinquedos</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: linear-gradient(135deg, black, deeppink);
+            color: white;
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-title img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-title h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .opcoes {
+            display: flex;
+            gap: 30px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .opcoes a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .opcoes a:hover {
+            text-decoration: underline;
+        }
+
+        .cardg {
+            max-width: 1000px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            margin-top: 0%;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color: rgb(167, 0, 92);
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carditem {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            color: #333;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s;
+            text-align: center;
+            cursor: pointer;
+            /* mostra a mãozinha */
+        }
+
+        .carditem:hover {
+            transform: scale(1.05);
+        }
+
+        .carditem img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-title">
+            <img src="https://i.ibb.co/rKJYz5ZJ/0d17df32-e2e4-45f3-94b5-265222740eb9-1.png" alt="logo">
+            <h1>Coleciona a dor</h1>
+        </div>
+
+        <nav class="opcoes">
+            <a href="brinquedo.html">Brinquedos</a>
+            <a href="roupa.html">Roupas</a>
+        </nav>
+    </header>
+
+    <div class="cardg">
+        <h2>Brinquedos</h2>
+        <div class="cards">
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Pelucia Banguela</h1>
+                <img src="https://i.ibb.co/pB6Gnc4J/image.png" alt="Banguela">
+                <p>100R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Porco do Gravity Falls (Waddles)</h1>
+                <img src="https://i.ibb.co/DDMccHY4/image.png" alt="Porco Gravity Falls (Waddles)">
+                <p>200R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Pelúcia B-MO</h1>
+                <img src="https://i.ibb.co/zWZLJ1W3/image.png" alt="Pelúcia B-MO">
+                <p>400R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Brinquedo Jake Linguarudo</h1>
+                <img src="https://i.ibb.co/yn0S7RWX/image.png" alt="Jake Linguarudo">
+                <p>100R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Conjunto Action-Figures Gorillaz</h1>
+                <img src="https://i.ibb.co/twH80K8B/image.png" alt="Action-Figures Gorillaz">
+                <p>200R$</p>
+            </div>
+            <div class="carditem" onclick="window.location='compra.html'">
+                <h1>Pelúcia Dragonite</h1>
+                <img src="https://i.ibb.co/Dg54m9g3/image.png" alt="Dragonite">
+                <p>300R$</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
