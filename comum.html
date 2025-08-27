@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+        }
+
+        .header {
+            background-color: blueviolet;
+            padding: 30px 70px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 12px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .header h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .opcoes {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .opcoes li {
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .card2 {
+            padding: 400px;
+            border-radius: 10px;
+            box-shadow: 10px 20px 39px rgba(0,0,0,0.2);
+            margin: 20px 70px; 
+        }
+
+        .card h1 {
+            margin: 0;
+        }
+
+
+        .cardg {
+            max-width: 1000px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        .cardg h2 {
+            margin-top: 0%;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 2rem;
+            color: rgb(0, 130, 130);
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carditem {
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            color: #333;
+            font-family: "Roboto Flex", sans-serif;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .carditem:hover {
+            transform: scale(1.05);
+        }
+
+
+        .carditem img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Coleciona a dor</h1>
+        <ul class="opcoes">
+            <li>Brinquedos</li>
+            <li>Roupas</li>
+        </ul>
+    </div>
+
+
+    <div class="cardg">
+        <h2>Moletom</h2>
+        <div class="cards">
+            <div class="carditem">
+                <h1> Moletom branco com listras verdes</h1>
+                <img src="https://i.ibb.co/ks5T7D8G/3e0594d13d4c4a644eab88a5e929ce27.jpg">
+                <p>100R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Moletom SOUL EATER</h1>
+                <img src="https://i.ibb.co/Y7N5GHtH/50ab34c489d3bbd2e5fd775f9cd67d2f.jpg">
+                <p>200$R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Moletom Vermelho vinho</h1>
+                <img src="https://i.ibb.co/Y7HgjCpm/345f5c04e45b9235c391793cd3a33136.jpg">
+                <p>400R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Moletom FUTE</h1>
+                <img src="https://i.ibb.co/cKD84bHP/776a32a76f7ab8a8c04ea44183613524.jpg">
+                <p>100R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Moletom RE'ASUPRE</h1>
+                <img src="https://i.ibb.co/CKXtdBfb/df16470e37401fffff17bf8059297a22.jpg">
+                <p>200R$</p>
+            </div>
+            <div class="carditem">
+                <h1>Moletom ALL STAR</h1>
+                <img src="https://i.ibb.co/gbPmt8TQ/e377e14c2473d985aaba606dc59a7fed.jpg">
+                <p>300R$</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
